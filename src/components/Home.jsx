@@ -5,7 +5,7 @@ import Card from "./Card";
 const Home = () => {
   return (
     <>
-      <h1 className="text-2xl text-center font-bold mt-4 underline">
+      <h1 className="text-2xl text-center font-bold mt-20 underline">
         RANDOM PRODUCT
       </h1>
       <HeroSection />
