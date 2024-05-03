@@ -30,7 +30,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <>
+    <div className="mt-10">
       {Object.keys(products).length === 0 ? (
         <div className="gap-4 w-10/12 m-auto ">
           <div className="skeleton h-96 w-full mb-2"></div>
@@ -54,7 +54,7 @@ const HeroSection = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

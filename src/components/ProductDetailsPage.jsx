@@ -42,7 +42,7 @@ const ProductDetailsPage = () => {
   }, [cart, dispatch]);
 
   return (
-    <div className="mt-10">
+    <div className="mt-20">
       {Object.keys(product).length === 0 ? (
         <div className="gap-4 w-10/12 m-auto ">
           <div className="skeleton h-96 w-full mb-2"></div>
