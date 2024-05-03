@@ -26,7 +26,6 @@ const ProductDetailsPage = () => {
       .catch((err) => {
         console.log("Error", err);
       });
-
     dispatch(selectedProducts(response.data));
   };
 
