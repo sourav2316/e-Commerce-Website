@@ -72,7 +72,7 @@ const Cart = () => {
                   </div>
                 </div>
                 <div className="cart product-price font-bold">
-                  ${cart.price}
+                  Product Price ${cart.price}
                 </div>
                 <div className="cart-product-quantity">
                   <button
@@ -90,7 +90,7 @@ const Cart = () => {
                   </button>
                 </div>
                 <div className="cart-product-total-price">
-                  Price : $
+                  Total Price : $
                   {Math.floor(cart.price * cart.cartQuantity * 100) / 100}
                 </div>
               </div>

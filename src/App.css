@@ -176,4 +176,7 @@
   .cart-summary .clear-btn {
     margin-bottom: 2rem;
   }
+  .cart-checkout{
+    margin-top: 30px;
+  }
 }
