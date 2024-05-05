@@ -57,21 +57,23 @@ const Cart = () => {
           </div>
           <div className="cart-items">
             {cart.cartItems?.map((cart) => (
-              <div className="cart-item" key={cart.id}>
+              <div className="cart-item gap-10" key={cart.id}>
                 <div className="cart-product">
                   <img src={cart.image} alt={cart.title} />
-                  <div>
-                    <h3>{cart.title} </h3>
+                  <div className="flex gap-5 flex-col">
+                    <h3 className="font-bold">{cart.title} </h3>
                     <p>{cart.description.slice(0, 120)} </p>
                     <button
-                      className="btn btn-error text-black"
+                      className="btn btn-outline w-20"
                       onClick={() => handleRemoveFromCart(cart)}
                     >
                       Remove
                     </button>
                   </div>
                 </div>
-                <div className="cart product-price">${cart.price}</div>
+                <div className="cart product-price font-bold">
+                  ${cart.price}
+                </div>
                 <div className="cart-product-quantity">
                   <button
                     className="btn"
