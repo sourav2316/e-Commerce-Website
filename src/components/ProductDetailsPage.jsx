@@ -50,8 +50,9 @@ const ProductDetailsPage = () => {
           <div className="skeleton h-4 w-full"></div>
         </div>
       ) : (
-        <div className="hero">
-          <div className="hero-content flex-col lg:flex-row-reverse  border-x-4 border-amber-300 p-8">
+        <div className="hero max-w-screen-xl m-auto">
+          <div className="hero-content flex-col lg:flex-row-reverse  border-x-4 border-amber-300 p-8 gap-20">
+            <img src={image} className="max-w-64 md:w-16 lg:w-96" />
             <div>
               <h1 className="text-4xl font-bold">{title}</h1>
               <p className="py-6 text-wrap">{description}</p>
@@ -74,7 +75,6 @@ const ProductDetailsPage = () => {
                 ADD TO CART
               </button>
             </div>
-            <img src={image} className="max-w-sm p-10" />
           </div>
         </div>
       )}

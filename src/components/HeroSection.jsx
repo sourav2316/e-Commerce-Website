@@ -39,9 +39,9 @@ const HeroSection = () => {
           <div className="skeleton h-4 w-full"></div>
         </div>
       ) : (
-        <div className="hero mt-10" key={id}>
+        <div className="hero mt-10 max-w-screen-xl m-auto" key={id}>
           <div className="hero-content flex-col lg:flex-row-reverse  border-x-4 border-amber-300 p-8">
-            <img src={image} className="max-w-sm p-10" />
+            <img src={image} className="max-w-64 md:w-16 lg:w-96" />
             <div>
               <h1 className="text-5xl font-bold max-sm:text-2xl">{title}</h1>
               <p className="py-6 max-sm:text-wrap">{description}</p>
