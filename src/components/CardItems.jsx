@@ -36,7 +36,7 @@ const CardItems = () => {
             </h2>
             <p className="text-xs">{p.description.slice(0, 100)}</p>
 
-            <div className="card-actions justify-between mx-2">
+            <div className="card-actions justify-between mx-2 my-4">
               <div className="font-bold text-sm">Price : ${p.price}</div>
               <div className="font-bold text-sm">
                 Rating : {p.rating.rate}⭐
