@@ -42,14 +42,14 @@ const CardItems = () => {
             </div>
             <div className="flex gap-2 justify-evenly">
               <button
-                className="btn bg-amber-300 text-xs w-28"
+                className="btn bg-amber-300 text-xs w-28 text-nowrap"
                 onClick={() => handleAddToCart(p)}
               >
                 ADD TO CART
               </button>
 
               <Link to={`/productDetails/${p.id}`}>
-                <button className="btn bg-amber-300 text-xs w-28">
+                <button className="btn bg-amber-300 text-xs w-28 text-nowrap">
                   VIEW DETAILS
                 </button>
               </Link>
