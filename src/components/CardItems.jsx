@@ -28,21 +28,21 @@ const CardItems = () => {
             <img src={p.image} alt={p.category} className=" h-32" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title text-base font-bold">
-              {p.title.slice(0, 10)}
+            <h2 className="card-title text-base font-bold text-nowrap">
+              {p.title.slice(0, 12)}
               <div className="badge badge-secondary text-xs text-nowrap">
                 {p.category}
               </div>
             </h2>
-            <p>{p.description.slice(0, 60)}</p>
-            <br />
-            <div className="card-actions justify-between">
-              <div className="badge text-lg font-bold">${p.price}</div>
-              <div className="badge font-bold ">Rating : {p.rating.rate}⭐</div>
+            <p className="text-xs">{p.description.slice(0, 100)}</p>
+
+            <div className="card-actions justify-between m-1">
+              <div className="font-bold">Price : ${p.price}</div>
+              <div className="font-bold ">Rating : {p.rating.rate}⭐</div>
             </div>
-            <div className="flex gap-5">
+            <div className="flex gap-2">
               <button
-                className="btn bg-amber-300 text-nowrap"
+                className="btn bg-amber-300 "
                 onClick={() => handleAddToCart(p)}
               >
                 ADD TO CART
