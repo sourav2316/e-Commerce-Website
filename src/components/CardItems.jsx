@@ -36,9 +36,11 @@ const CardItems = () => {
             </h2>
             <p className="text-xs">{p.description.slice(0, 100)}</p>
 
-            <div className="card-actions justify-between m-1">
-              <div className="font-bold">Price : ${p.price}</div>
-              <div className="font-bold ">Rating : {p.rating.rate}⭐</div>
+            <div className="card-actions justify-between mx-2">
+              <div className="font-bold text-sm">Price : ${p.price}</div>
+              <div className="font-bold text-sm">
+                Rating : {p.rating.rate}⭐
+              </div>
             </div>
             <div className="flex gap-2 justify-evenly">
               <button
